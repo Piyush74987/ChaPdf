@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.panel {
+  width: 600px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.chat {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.msg {
+  margin-bottom: 0.5rem;
+}
+
+.msg.user .bubble {
+  background: #daf1ff;
+  text-align: left;
+}
+
+.msg.assistant .bubble {
+  background: #f1f0f0;
+  text-align: left;
+}
+
+.bubble {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+}
+
+.composer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.composer input {
+  flex: 1;
+  padding: 0.5rem;
+}
